@@ -50,7 +50,7 @@
 					<div class="breadcrumb-title pe-3">Prima Mandiri</div>
 				</div>
 				<!--end breadcrumb-->
-     
+
         <div class="row">
           <div class="col-xxl-8 d-flex align-items-stretch">
             <div class="card w-100 overflow-hidden rounded-4">
@@ -591,7 +591,7 @@
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
           <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
             <div class="card w-100 rounded-4">
@@ -982,7 +982,7 @@
     </div>
   </div>
   <!--end cart-->
-  
+
   <!--start switcher-->
   <button class="btn btn-grd btn-grd-primary position-fixed bottom-0 end-0 m-3 d-flex align-items-center gap-2" id="custom-bg"
         type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">

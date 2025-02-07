@@ -3,6 +3,9 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\KunjunganController;
+use App\Http\Controllers\BookingServiceController;
+
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +39,20 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', IsAdmin::class]], fu
     Route::post('/send-contact', [ContactController::class, 'sendContactEmail'])->name('contact.send');
 });
 
+// galerry
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');
 Route::post('/gallery', [GalleryController::class, 'store'])->name('gallery.store');
 Route::delete('/gallery/{id}', [GalleryController::class, 'destroy'])->name('gallery.destroy');
+
+// kunjungan
+Route::get('/kunjungan/create', [KunjunganController::class, 'create']);
+Route::post('/kunjungan/store', [KunjunganController::class, 'store']);
+Route::get('/admin/kunjungan', [KunjunganController::class, 'index']);
+
+// admin booking
+Route::get('/booking-service/create', [BookingServiceController::class, 'create'])->name('booking_service.create');
+Route::post('/booking-service/store', [BookingServiceController::class, 'store'])->name('booking_service.store');
+
+Route::get('/test-adminlte', function () {
+    return view('test-adminlte');
+});

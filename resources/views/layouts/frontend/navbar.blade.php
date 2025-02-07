@@ -17,6 +17,7 @@
                 <ul class="nav">
                     <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                     <li class="scroll-to-section"><a href="#about">Services Offered</a></li>
+                    <li class="scroll-to-section"><a href="{{ url('/kunjungan/create') }}">Booking</a></li>
                     <li class="scroll-to-section"><a href="#services">Customer Testimonials</a></li>
                     <li class="scroll-to-section"><a href="#portfolio">Sparepart</a></li>
                     <li class="scroll-to-section"><a href="#gallery">Gallery</a></li>

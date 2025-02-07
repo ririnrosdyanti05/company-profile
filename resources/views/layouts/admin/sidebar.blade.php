@@ -40,6 +40,18 @@
               </li>
             </ul>
           </li>
+          <li>
+            <a href="javascript:;" class="has-arrow">
+              <div class="parent-icon"><i class="material-icons-outlined">Booking Service</i>
+              </div>
+              <div class="menu-title">BOOKING SERVICE</div>
+            </a>
+            <ul>
+              <li><a href="{{ route('/booking-service/create') }}"><i
+                            class="material-icons-outlined">arrow_right</i>Add Booking Service</a>
+              </li>
+            </ul>
+          </li>
           <!-- <li>
             <a class="has-arrow" href="javascript:;">
               <div class="parent-icon"><i class="material-icons-outlined">card_giftcard</i>
