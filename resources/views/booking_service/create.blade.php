@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+{{-- @extends('adminlte::page')
 
 @section('title', 'Form Booking Service')
 
@@ -78,4 +78,4 @@
     <script>
         console.log('Form Booking Service Page Loaded!');
     </script>
-@stop
+@stop --}}

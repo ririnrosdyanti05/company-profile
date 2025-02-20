@@ -21,6 +21,7 @@
                     <th>Alamat</th>
                     <th>Jadwal</th>
                     <th>Jam</th>
+                    <th>Suku Cadang</th> <!-- Tambahkan Kolom Baru -->
                 </tr>
             </thead>
             <tbody>
@@ -32,6 +33,13 @@
                         <td>{{ $item->alamat }}</td>
                         <td>{{ $item->jadwal }}</td>
                         <td>{{ $item->jam }}</td>
+                        <td>
+                            <ul>
+                                @foreach($suku_cadang as $sc)
+                                    <li>{{ $sc->nama }} - Rp{{ number_format($sc->harga, 0, ',', '.') }}</li>
+                                @endforeach
+                            </ul>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
